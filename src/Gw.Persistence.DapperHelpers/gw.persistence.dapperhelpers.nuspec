@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Gw.Persistence.DapperHelpers</id>
+    <version>$version$</version>
+    <authors>Rui Carvalho</authors>
+    <owners>Ghostwording</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Helpers for using Dapper Micro ORM</description>
+    <releaseNotes>Initialized from previous repository</releaseNotes>
+    <copyright>Copyright 2013-2016</copyright>
+    <tags>core</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\GwPersistence.DapperHelpers.dll" target="lib\net40\" />
+  </files>
+</package>
