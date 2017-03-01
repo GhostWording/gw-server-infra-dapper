@@ -57,6 +57,9 @@
     <Compile Include="SqlTasksHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="gw.persistence.dapperhelpers.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

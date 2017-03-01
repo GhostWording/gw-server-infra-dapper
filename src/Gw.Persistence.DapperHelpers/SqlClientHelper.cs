@@ -15,6 +15,7 @@ namespace Gw.Persistence.DapperHelpers
         }
 
         public static string DefaultConnectionString => defaultConnectionString;
+
         public static SqlConnection GetSqlConnection(string connectionString = null)
         {
             if(string.IsNullOrEmpty(connectionString ?? defaultConnectionString))
@@ -23,11 +24,11 @@ namespace Gw.Persistence.DapperHelpers
             return new SqlConnection(connectionString ?? defaultConnectionString);
         }
 
-        public static Result<T> WithOpenSqlConnection<T>(Func<SqlConnection, T> action)
+        public static Result<T> WithOpenSqlConnection<T>(Func<SqlConnection, T> action, string connectionstring = null)
         {
             try
             {
-                using (var connection = GetSqlConnection())
+                using (var connection = GetSqlConnection(connectionstring))
                 {
                     connection.Open();
 
